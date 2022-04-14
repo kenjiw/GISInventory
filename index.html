@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GISinventory search page</title>
+        </title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Common CSS -->
+        <link href="css/common.css" rel="stylesheet">
+        <!--Fonts Stylesheet (Open Sans)-->
+        <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <header id="searchPage_header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="searchPage_headerInner">
+                    <nav id="userLoginBox">
+                        <span id="loginLogo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span id="userLogin">&nbsp;User Login</span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Title and Search Section -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="searchBox_container"  class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+                    
+                    <div id="searchMain" >
+                        <h1 id="searchTitle"><img id="mtcGISlogo" src="images/mtcgisLogo.png" class="img-responsive"/><span id="GIS_bold">GIS</span><span id="inventory">inventory</span></h1>
+                        <div id="searchBox_top">
+                            <div id="form">
+                                <form id=action="" class="form-inline">
+                                    <div class="input-group">
+                                        <label for="keyword" class="sr-only control-label">keyword</label>
+                                        <input type="text" id="keyword_top" class="form-control" placeholder="Type keyword here" onclick="parent.location.href='result.html'">
+                                        <span id="topSearchBtn_outer" class="input-group-btn">
+                                        <button id="topSearchBtn_inner" type="submit" value="" class="btn"><span id="searchIcon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
+                                        </span>
+                                        </div><!-- /input-group -->
+                                    </form>
+                                </div>
+                            </div>
+                            <div id="tagSwitch">
+                                <span id="tagIcon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="showTag">&nbsp;Show popular tags</span>
+                            </div>
+                            <div id="tag_underline"></div>
+                            
+                            <!-- tag cloud comes here -->
+                            <div id="tagCloudbox">
+                                <img src="images/tagCloud_sample.svg"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /searchBox_container -->
+                </div>
+            </div>
+        </section>
+        <!-- /Title and Search Section -->
+
+        <!-- jQuery JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- General Javascript file -->
+        <script src="js/script.js"></script>
+
+    </body>
+
+</html>
